@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /apollo
+RewriteCond %{REQUEST_URI} !app/
+RewriteRule (.*) /apollo/app/$1 [L]
+
